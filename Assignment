@@ -1,0 +1,69 @@
+AP Computer Science A
+Unit 6 Program: Quiz
+
+If you are using repl.it, create a program called Quiz.  Leave the Main class alone for now and create another file called Quiz.java. If you are using Dr. Java, create a file called Quiz. Define this class as described below.  All variables should be declared as private and all methods as public.  
+
+Class Name:		Quiz
+
+Static Variable:		answerKey – String [ ] that should be initialized using an initializer list according 
+to the following answer key (only enter the letters into the array):
+
+		1. B 	2. D 	3. C 	4. A 	5. E
+6. A 	7. B 	8. A 	9. E 	10. B
+
+     Instance Variables:  	studentAns – String [ ]
+
+Instance Methods:   		A constructor that accepts one argument for studentAns.  Have the constructor
+create a new studentAns array with the same length as the parameter.  Copy each 
+element from the parameter array into the studentAns array using a for loop and
+making sure each answer gets changed to uppercase as it is being put into the array.
+
+accessor method for studentAns.
+
+totalCorrect method that will return the number of correctly answered questions.
+
+totalMistakes method that will return the number of incorrect answers.
+
+isPassing method that will return true if the student passed the exam, or false if the student failed.  A student must correctly answer 7 out of 10 questions in order to pass the quiz.
+
+toString() a method to display the correct answers and the student answers.  It must be in a side by side, 2 column format, with item numbers as follows:
+		ANSWER KEY 	Student’s Answers
+1) B 			1) A
+2) D 			2) A
+3) C 			3) C
+.				.
+. 				.
+. 				.
+Hint:  Create a String and initialize it to the first line of the output using a tab between the phrases instead of spaces (\t).  Create another String for the rest of your output, initializing it to the empty String.  Use a for loop to concatenate onto that string the problem number (which should be one more than the index number) and the String from each array at that index with tabs between the correct answer and the student’s answer (two tabs should do it - \t\t).  Return the first String, followed by a new line (\n), followed by the second String. 
+
+
+Continue on the next page
+
+If you are using repl.it, complete the Main class to test your Quiz class as defined below. 
+If you are using Dr. Java, create a file called QuizDriver. define this class as described below.  
+
+Write a static method that returns an array of Strings.
+Create a String array called answerArray of size 10.
+
+Create a Scanner object.
+
+Use a for loop to allow the user to enter their answers one at a time until they have entered all 10 answers.  Store these into the answerArray as they enter them.  It should not matter if they enter upper- or lower-case letters.
+
+Return this array when called
+
+
+In the main method,
+Declare a String array variable called answers (do not insatiate)
+
+Call the static method to assign a reference from the array created in the static method.
+
+Create a Quiz object using the array of answers as the parameter.
+
+Display the following information:
+The correct answers and student’s answers using the toString method.
+
+Number of Correct Answers: ___ (the blank should be filled in with the appropriate value returned from the appropriate method).
+
+Number of Mistakes: ___ (the blank should be filled in with the appropriate value returned from the appropriate method).
+
+Display either “The student PASSED” or “The student FAILED” as determined by the appropriate method.
