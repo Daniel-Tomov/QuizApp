@@ -5,6 +5,6 @@ Thing for AP Computer Science A
 
 # Notes:
 
-Made with Replit
+Made with [Replit](https://replit.com/)
 
 Did this for a friend in AP Computer Science. Not actually in it.
